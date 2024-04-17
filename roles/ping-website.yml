@@ -1,0 +1,6 @@
+---
+- name: Ping website
+  uri:
+    url: "http://www.p.pl"
+    method: GET
+    status_code: 200
