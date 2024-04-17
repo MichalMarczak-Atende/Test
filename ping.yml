@@ -1,4 +1,7 @@
 ---
-- hosts: all
-  roles:
-    - ping
+- name: Ping Website
+  hosts: all
+  tasks:
+    - name: Ping www.wp.pl
+      include_role:
+        name: ping_website
